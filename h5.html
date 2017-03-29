@@ -233,30 +233,29 @@
                 $(document).ready(function() {
                     var musicControl = function(obj){
                     
-                    if (obj.hasClass('on'))
-                    {
-                        document.getElementById('bgm').pause();
-                        obj.removeClass('on').addClass('off');
-                        $('.music_icon').removeClass('active');
+                        if (obj.hasClass('on')){
+                            document.getElementById('bgm').pause();
+                            obj.removeClass('on').addClass('off');
+                            $('.music_icon').removeClass('active');
+                            
+                        } else if (obj.hasClass('off'))
+                        {
+                            document.getElementById('bgm').play();
+                            obj.removeClass('off').addClass('on');
+                            $('.music_icon').addClass('active');
                         
-                    } else if (obj.hasClass('off'))
+                        };
+                        return false;
+                    }
+                    $('#pause').click(function ()
                     {
-                        document.getElementById('bgm').play();
-                        obj.removeClass('off').addClass('on');
-                        $('.music_icon').addClass('active');
-                    
-                    };
-                    return false;
-                }
-                $('#pause').click(function ()
-                {
-                    musicControl($(this));
-                });
-                var audio = document.getElementById('bgm');
-                audio.play();
-                $(document).one("touchstart",function() {
-                    audio.play()
-                })
+                        musicControl($(this));
+                    });
+                    // var audio = document.getElementById('bgm');
+                    // audio.play();
+                    // $(document).one("touchstart",function() {
+                    //     audio.play()
+                    // })
             });
         })(jQuery);
     </script>
