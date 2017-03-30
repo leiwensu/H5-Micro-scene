@@ -3,10 +3,12 @@ body {
     position: relative;
     height: 100%;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
     background: #eee;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -15,6 +17,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .swiper-container {
     width: 100%;
     height: 100%;
@@ -39,72 +42,71 @@ body {
     -webkit-align-items: center;
     align-items: center;
 }
-.music_control{
+
+.music_control {
     position: fixed;
     right: 0.2rem;
     top: 0.2rem;
     z-index: 99;
 }
-.music_control .music_icon{
+
+.music_control .music_icon {
     width: 0.72rem;
     height: 0.72rem;
     background: url("../images/music_off.png") no-repeat;
     background-size: 0.72rem;
 }
-.music_control .music_icon.active{
-   background: url("../images/music_on.png") no-repeat;
-   background-size: 0.72rem;
-}
-.audio{
-    display: none; 
-    width: 0; 
-    height: 0;
-}
-.on{
-    -webkit-animation:reverseRotataZ 1.2s linear infinite;
-    animation: reverseRotataZ 1.2s linear infinite;
-}
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+
+.music_control .music_icon.active {
+    background: url("../images/music_on.png") no-repeat;
+    background-size: 0.72rem;
 }
 
-.animated.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+.audio {
+    display: none;
+    width: 0;
+    height: 0;
 }
+
+.on {
+    -webkit-animation: reverseRotataZ 1.2s linear infinite;
+    animation: reverseRotataZ 1.2s linear infinite;
+}
+
 @-webkit-keyframes reverseRotataZ {
-   0% {
-        -webkit-transform:rotateZ(0deg)
-    }
-    100% {
-        -webkit-transform:rotateZ(-360deg)
-    }
-}
-@-o-keyframes reverseRotataZ{
     0% {
-        -webkit-transform:rotateZ(0deg)
+        -webkit-transform: rotateZ(0deg)
     }
     100% {
-        -webkit-transform:rotateZ(-360deg)
+        -webkit-transform: rotateZ(-360deg)
     }
 }
-@keyframes reverseRotataZ{
+
+@-o-keyframes reverseRotataZ {
     0% {
-        -webkit-transform:rotateZ(0deg)
+        -webkit-transform: rotateZ(0deg)
     }
     100% {
-        -webkit-transform:rotateZ(-360deg)
+        -webkit-transform: rotateZ(-360deg)
     }
 }
+
+@keyframes reverseRotataZ {
+    0% {
+        -webkit-transform: rotateZ(0deg)
+    }
+    100% {
+        -webkit-transform: rotateZ(-360deg)
+    }
+}
+
 .linear {
     -webkit-animation-name: linear;
     animation-name: linear;
 }
-@-webkit-keyframes linear{
-     40%{
+
+@-webkit-keyframes linear {
+    40% {
         -webkit-transform: translate3d(0, -10px, 0);
         transform: translate3d(0, -10px, 0);
     }
@@ -113,8 +115,9 @@ body {
         transform: translate3d(0, 0px, 0);
     }
 }
-@-o-keyframes linear{
-     40%{
+
+@-o-keyframes linear {
+    40% {
         -webkit-transform: translate3d(0, -10px, 0);
         transform: translate3d(0, -10px, 0);
     }
@@ -123,8 +126,9 @@ body {
         transform: translate3d(0, 0px, 0);
     }
 }
+
 @keyframes linear {
-    40%{
+    40% {
         -webkit-transform: translate3d(0, -10px, 0);
         transform: translate3d(0, -10px, 0);
     }
@@ -133,277 +137,184 @@ body {
         transform: translate3d(0, 0px, 0);
     }
 }
-.movedown{
-    -webkit-animation:moveDown 0.6s ease-in-out 0.2s backwards;
-	-moz-animation:moveDown 0.6s ease-in-out 0.2s backwards;
-	-o-animation:moveDown 0.6s ease-in-out 0.2s backwards;
-	-ms-animation:moveDown 0.6s ease-in-out 0.2s backwards;
-	animation:moveDown 0.6s ease-in-out 0.2s backwards;
+
+.movedown {
+    -webkit-animation: moveDown 0.6s ease-in-out 0.2s backwards;
+    -moz-animation: moveDown 0.6s ease-in-out 0.2s backwards;
+    -o-animation: moveDown 0.6s ease-in-out 0.2s backwards;
+    -ms-animation: moveDown 0.6s ease-in-out 0.2s backwards;
+    animation: moveDown 0.6s ease-in-out 0.2s backwards;
 }
-@-webkit-keyframes moveDown{
-	0%{
-		-webkit-transform:translateY(-40px);
-		opacity: 0;
-	}
-	100%{
-		-webkit-transform : translateY(0);
-		opacity: 1;
-	}
+
+@-webkit-keyframes moveDown {
+    0% {
+        -webkit-transform: translateY(-40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
 }
-@-moz-keyframes moveDown{
-	0%{
-		-webkit-transform:translateY(-40px);
-		opacity: 0;
-	}
-	100%{
-		-webkit-transform : translateY(0);
-		opacity: 1;
-	}
+
+@-moz-keyframes moveDown {
+    0% {
+        -webkit-transform: translateY(-40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
 }
-@-o-keyframes moveDown{
-	0%{
-		-webkit-transform:translateY(-40px);
-		opacity: 0;
-	}
-	100%{
-		-webkit-transform : translateY(0);
-		opacity: 1;
-	}
+
+@-o-keyframes moveDown {
+    0% {
+        -webkit-transform: translateY(-40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
 }
-@-ms-keyframes moveDown{
-	0%{
-		-webkit-transform:translateY(-40px);
-		opacity: 0;
-	}
-	100%{
-		-webkit-transform : translateY(0);
-		opacity: 1;
-	}
+
+@-ms-keyframes moveDown {
+    0% {
+        -webkit-transform: translateY(-40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
 }
-@keyframes moveDown{
-	0%{
-		-webkit-transform:translateY(-40px);
-		opacity: 0;
-	}
-	100%{
-		-webkit-transform : translateY(0);
-		opacity: 1;
-	}
+
+@keyframes moveDown {
+    0% {
+        -webkit-transform: translateY(-40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
 }
-.moveup{
-    -webkit-animation:moveUp 0.6s ease-in-out 0.2s backwards;
-	-moz-animation:moveUp 0.6s ease-in-out 0.2s backwards;
-	-o-animation:moveUp 0.6s ease-in-out 0.2s backwards;
-	-ms-animation:moveUp 0.6s ease-in-out 0.2s backwards;
-	animation:moveUp 0.6s ease-in-out 0.2s backwards;
+
+.moveup {
+    -webkit-animation: moveUp 0.6s ease-in-out 0.2s backwards;
+    -moz-animation: moveUp 0.6s ease-in-out 0.2s backwards;
+    -o-animation: moveUp 0.6s ease-in-out 0.2s backwards;
+    -ms-animation: moveUp 0.6s ease-in-out 0.2s backwards;
+    animation: moveUp 0.6s ease-in-out 0.2s backwards;
 }
-@-webkit-keyframes moveUp{
-	0%{
-		-webkit-transform : translateY(80px);
-		opacity: 0;
-	}
-	100%{
-		-webkit-transform : translateY(0);
-		opacity: 1;
-	}
+
+@-webkit-keyframes moveUp {
+    0% {
+        -webkit-transform: translateY(80px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
 }
-@-moz-keyframes moveUp{
-	0%{
-		-webkit-transform : translateY(80px);
-		opacity: 0;
-	}
-	100%{
-		-webkit-transform : translateY(0);
-		opacity: 1;
-	}
+
+@-moz-keyframes moveUp {
+    0% {
+        -webkit-transform: translateY(80px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
 }
-@-ms-keyframes moveUp{
-	0%{
-		-webkit-transform : translateY(80px);
-		opacity: 0;
-	}
-	100%{
-		-webkit-transform : translateY(0);
-		opacity: 1;
-	}
+
+@-ms-keyframes moveUp {
+    0% {
+        -webkit-transform: translateY(80px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
 }
-@-o-keyframes moveUp{
-	0%{
-		-webkit-transform : translateY(80px);
-		opacity: 0;
-	}
-	100%{
-		-webkit-transform : translateY(0);
-		opacity: 1;
-	}
+
+@-o-keyframes moveUp {
+    0% {
+        -webkit-transform: translateY(80px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
 }
-@keyframes moveUp{
-	0%{
-		-webkit-transform : translateY(80px);
-		opacity: 0;
-	}
-	100%{
-		-webkit-transform : translateY(0);
-		opacity: 1;
-	}
+
+@keyframes moveUp {
+    0% {
+        -webkit-transform: translateY(80px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
 }
+
 @-webkit-keyframes swing {
-  20% {
-    -webkit-transform: rotate3d(0, 0, 1, 2deg);
-    transform: rotate3d(0, 0, 1, 2deg);
-  }
-
-  40% {
-    -webkit-transform: rotate3d(0, 0, 1, -2deg);
-    transform: rotate3d(0, 0, 1, -2deg);
-  }
-
-  60% {
-    -webkit-transform: rotate3d(0, 0, 1, 1deg);
-    transform: rotate3d(0, 0, 1, 1deg);
-  }
-
-  80% {
-    -webkit-transform: rotate3d(0, 0, 1, -1deg);
-    transform: rotate3d(0, 0, 1, -1deg);
-  }
-
-  to {
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-  }
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 2deg);
+        transform: rotate3d(0, 0, 1, 2deg);
+    }
+    40% {
+        -webkit-transform: rotate3d(0, 0, 1, -2deg);
+        transform: rotate3d(0, 0, 1, -2deg);
+    }
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 1deg);
+        transform: rotate3d(0, 0, 1, 1deg);
+    }
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, -1deg);
+        transform: rotate3d(0, 0, 1, -1deg);
+    }
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
 }
 
 @keyframes swing {
-  20% {
-    -webkit-transform: rotate3d(0, 0, 1, 2deg);
-    transform: rotate3d(0, 0, 1, 2deg);
-  }
-
-  40% {
-    -webkit-transform: rotate3d(0, 0, 1, -2deg);
-    transform: rotate3d(0, 0, 1, -2deg);
-  }
-
-  60% {
-    -webkit-transform: rotate3d(0, 0, 1, 1deg);
-    transform: rotate3d(0, 0, 1, 1deg);
-  }
-
-  80% {
-    -webkit-transform: rotate3d(0, 0, 1, -1deg);
-    transform: rotate3d(0, 0, 1, -1deg);
-  }
-
-  to {
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-  }
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 2deg);
+        transform: rotate3d(0, 0, 1, 2deg);
+    }
+    40% {
+        -webkit-transform: rotate3d(0, 0, 1, -2deg);
+        transform: rotate3d(0, 0, 1, -2deg);
+    }
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 1deg);
+        transform: rotate3d(0, 0, 1, 1deg);
+    }
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, -1deg);
+        transform: rotate3d(0, 0, 1, -1deg);
+    }
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
 }
 
 .swing {
-  -webkit-transform-origin: top center;
-  transform-origin: top center;
-  -webkit-animation-name: swing;
-  animation-name: swing;
-}
-@-webkit-keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-.pulse {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-}
-@-webkit-keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-.zoomIn {
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-animation-name: swing;
+    animation-name: swing;
 }
 
 .home {
@@ -469,10 +380,12 @@ body {
     height: 100%;
     width: 100%;
 }
-.slide_3{
+
+.slide_3 {
     width: 100%;
     height: 100%;
 }
+
 .bg_2 {
     margin-top: 0.8rem;
     position: relative;
@@ -552,7 +465,7 @@ body {
     animation-iteration-count: infinite;
 }
 
-.content{
+.content {
     box-sizing: border-box;
     position: absolute;
     padding: 0 10px;
@@ -560,9 +473,11 @@ body {
     z-index: 88;
     width: 100%;
 }
-.content_2{
+
+.content_2 {
     margin-top: 0.2rem;
 }
+
 .content img {
     position: relative;
     width: 6rem;
@@ -571,10 +486,12 @@ body {
     text-align: center;
     z-index: 99;
 }
-.content_7 img{
+
+.content_7 img {
     width: 5.12rem;
     height: 0.36rem;
 }
+
 .content p {
     position: relative;
     text-align: left;
@@ -582,9 +499,9 @@ body {
     color: #351c1c;
     padding: 0.2rem 0;
     z-index: 99;
-    
 }
-.mask{
+
+.mask {
     position: absolute;
     top: 0;
     left: 0;
@@ -594,21 +511,24 @@ body {
     background: #fff;
     opacity: 0.6;
 }
-.bg_3{
+
+.bg_3 {
     position: relative;
     width: 100%;
     height: 8.12rem;
     background: url("../images/3_bg.png") no-repeat center;
     background-size: 100% 8.12rem;
 }
-.bg_3 .product_img{
+
+.bg_3 .product_img {
     position: absolute;
     width: 2.4rem;
     height: 3.25rem;
     left: 0.65rem;
     top: 2.06rem;
 }
-.bg_3 .bag_img{
+
+.bg_3 .bag_img {
     position: absolute;
     top: 4.8rem;
     left: 0.5rem;
@@ -616,52 +536,62 @@ body {
     height: 1.28rem;
 }
 
-.bubble01,.bubble02,.bubble03{
+.bubble01,
+.bubble02,
+.bubble03 {
     position: absolute;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
-.bubble01{
+
+.bubble01 {
     top: 0.3rem;
     left: 2.9rem;
     width: 0.3rem;
     height: 0.3rem;
 }
-.bubble02{
+
+.bubble02 {
     top: 0.7rem;
     left: 1.75rem;
     width: 0.48rem;
     height: 0.48rem;
 }
-.bubble03{
+
+.bubble03 {
     top: 1.1rem;
     left: 2.45rem;
     width: 0.68rem;
     height: 0.68rem;
 }
-.slide_4{
+
+.slide_4 {
     width: 100%;
     height: 100%;
 }
-.bg_4{
+
+.bg_4 {
     height: 76%;
     width: 100%;
     position: relative;
 }
-.slide_4 .goods_img{
+
+.slide_4 .goods_img {
     position: absolute;
     left: 0.44rem;
     top: 1.4rem;
     width: 3.34rem;
     height: 4.52rem;
 }
-.slide_4 .bg_img{
+
+.slide_4 .bg_img {
     position: absolute;
     width: 100%;
     left: 0;
     top: 0.45rem;
 }
-.slide_4 .camera_img{
+
+.slide_4 .camera_img {
     position: absolute;
     left: 2.2rem;
     top: 5.8rem;
@@ -671,460 +601,531 @@ body {
     animation-iteration-count: infinite;
 }
 
-.slide_5{
+.slide_5 {
     width: 100%;
     height: 100%;
 }
-.bg_5{
+
+.bg_5 {
     position: relative;
     width: 100%;
     height: 100%;
     background: url("../images/5_bg.png") no-repeat;
     background-size: 100%;
 }
-.bg_5 .logo{
+
+.bg_5 .logo {
     position: absolute;
     width: 0.6rem;
     height: 0.6rem;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
-.bg_5 .logo1{
+
+.bg_5 .logo1 {
     top: 2.62rem;
     left: 0.4rem;
 }
-.bg_5 .logo2{
+
+.bg_5 .logo2 {
     top: 4.2rem;
     left: 0.92rem;
 }
-.bg_5 .logo3{
+
+.bg_5 .logo3 {
     top: 0.98rem;
     left: 1.48rem;
 }
-.bg_5 .logo4{
+
+.bg_5 .logo4 {
     top: 2.2rem;
     left: 1.76rem;
 }
-.bg_5 .logo5{
+
+.bg_5 .logo5 {
     top: 0.66rem;
     right: 2.90rem;
 }
-.bg_5 .logo6{
+
+.bg_5 .logo6 {
     top: 1.6rem;
     right: 1.8rem;
 }
-.bg_5 .logo7{
+
+.bg_5 .logo7 {
     top: 2.42rem;
     right: 0.35rem;
 }
-.bg_5 .logo8{
+
+.bg_5 .logo8 {
     top: 4.2rem;
     right: 1rem;
 }
-.content_5 p{
+
+.content_5 p {
     text-align: center;
 }
-.slide_6{
+
+.slide_6 {
     width: 100%;
     height: 100%;
 }
-.bg_6{
+
+.bg_6 {
     position: relative;
     width: 100%;
     height: 100%;
     background: url("../images/6_bg.png") no-repeat;
     background-size: 100%;
 }
-.bg_6 .gold{
+
+.bg_6 .gold {
     position: absolute;
     top: 0;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
 
-.gold1{
+.gold1 {
     left: 0.45rem;
     width: 0.62rem;
     height: 3.13rem;
 }
-.gold2{
+
+.gold2 {
     left: 1rem;
     width: 1.12rem;
     height: 1.75rem;
 }
-.gold3{
+
+.gold3 {
     width: 0.94rem;
     height: 4.52rem;
     left: 2rem;
 }
-.gold4{
+
+.gold4 {
     left: 4.8rem;
     width: 0.62rem;
     height: 1.37rem;
 }
-.gold5{
+
+.gold5 {
     width: 0.94rem;
     height: 3.52rem;
     left: 5.2rem;
 }
-.slide_7{
+
+.slide_7 {
     position: relative;
     width: 100%;
     height: 100%;
     background: url("../images/7_bg.png") no-repeat;
     background-size: cover;
 }
-.leaf3{
+
+.leaf3 {
     position: absolute;
     top: 6.2rem;
     left: 1.2rem;
     width: 0.46rem;
     height: 0.44rem;
 }
-.leaf2{
+
+.leaf2 {
     position: absolute;
     top: 5.4rem;
     left: 4.5rem;
     width: 0.48rem;
     height: 0.46rem;
 }
-.leaf1{
+
+.leaf1 {
     position: absolute;
     top: 4.54rem;
     left: 4.85rem;
     width: 0.4rem;
     height: 0.38rem;
 }
-.slide_8{
+
+.slide_8 {
     display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
     height: 100%;
 }
-.bg_8{
+
+.bg_8 {
     height: 4.58rem;
 }
-.bg_8 img{
+
+.bg_8 img {
     width: 100%;
     height: 100%;
 }
-.content_8{
+
+.content_8 {
     -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     margin-top: 0.1rem;
 }
-.content_8 img{
+
+.content_8 img {
     width: 5.22rem;
     height: 1.02rem;
 }
-.icon_arrow{
+
+.icon_arrow {
     width: 0.45rem;
     height: 0.3rem;
     background: url("../images/8_arrow.png") no-repeat;
     background-size: 0.45rem 0.3rem;
 }
-.wy-coupon__list .title{
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+
+.wy-coupon__list .title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
 }
-.wy-coupon__list .title h2{
-     color: #888;
-    font-size: 16px;
+
+.wy-coupon__list .title h2 {
+    color: #888;
+    font-size: 12px;
     font-weight: normal;
     padding-right: 0.2rem;
 }
-.coupon__item{
-    margin-top: 0.36rem;
+
+.coupon__item {
+    margin-top: 0.2rem;
 }
-.pro-hd{
+
+.pro-hd {
     text-align: left;
     -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
-.pro_side{
- display: -webkit-box;
-  display: box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-          -webkit-justify-content: flex_end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+
+.pro_side {
+    display: -webkit-box;
+    display: box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-justify-content: flex_end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
 }
-.slide_hd{
+
+.slide_hd {
     position: absolute;
     width: 100%;
-    bottom: 0.15rem;
+    bottom: 0.1rem;
 }
+
+
 /*卡券开始*/
-a{
-    text-decoration:none;
+
+a {
+    text-decoration: none;
 }
+
 a,
 span {
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 .bdb1px,
 .bdt1px {
-  position: relative;
+    position: relative;
 }
 
 .bdb1px:after,
 .bdt1px:before {
-  content: "";
-  position: absolute;
-  -webkit-transform: scaleY(0.5);
-      -ms-transform: scaleY(0.5);
-          transform: scaleY(0.5);
-  -webkit-transform-origin: 0 0;
-      -ms-transform-origin: 0 0;
-          transform-origin: 0 0;
-  right: 0px;
-  left: 0px;
+    content: "";
+    position: absolute;
+    -webkit-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    right: 0px;
+    left: 0px;
 }
 
 .bdb1px:after {
-  bottom: 0px;
-  border-bottom: 1px solid #c8c7cc;
+    bottom: 0px;
+    border-bottom: 1px solid #c8c7cc;
 }
 
 .bdt1px:before {
-  top: 0px;
-  border-top: 1px solid #c8c7cc;
+    top: 0px;
+    border-top: 1px solid #c8c7cc;
 }
+
 
 /* -----------------------------------------------       卡券              ----------------------------------------*/
+
 .wy-coupons__wrapper {
-  width: 100%;
-  min-width: 320px;
-  max-width: 640px;
-  margin: 0 auto;
-  position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
 }
+
 
 /* 头部 */
+
 .wy-coupons__header {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 48px;
-  box-sizing: border-box;
-  background-color: #fff;
-  text-align: center;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 48px;
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: center;
 }
+
 .wy-coupons__header .icon-back {
-  width: 20px;
-  height: 24px;
-  margin-left: 15px;
+    width: 20px;
+    height: 24px;
+    margin-left: 15px;
 }
+
 .wy-coupons__header .icon-back:before {
-  content: " ";
-  display: inline-block;
-  position: relative;
-  width: 14px;
-  height: 14px;
-  border-width: 0 0 1px 1px;
-  border-color: #333;
-  border-style: solid;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
+    content: " ";
+    display: inline-block;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border-width: 0 0 1px 1px;
+    border-color: #333;
+    border-style: solid;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
+
 .wy-coupons__header .wy-coupons__tt {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: center;
-  font-size: 16px;
-  color: #1b1b1b;
-  margin-left: -15px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    color: #1b1b1b;
+    margin-left: -15px;
 }
+
 
 /* 切换tab */
+
 .wy-coupons__content {
-  background: #f9f9f9;
-}
-.wy-coupons__content .weui-navbar {
-  height: 50px;
-  line-height: 50px;
-  background-color: #fff;
-}
-.wy-coupons__content .weui-navbar__item {
-  padding: 0;
-  color: #aeaeae;
-  background: #fff;
-  font-size: 16px;
-}
-.wy-coupons__content .weui-navbar__item:after {
-  border-right: none;
-}
-.wy-coupons__content .weui-navbar__item span {
-  position: relative;
-  display: inline-block;
-  height: 100%;
-  color: #aeaeae;
-}
-.wy-coupons__content .weui-navbar__item.weui-bar__item--on {
-  color: #000;
-}
-.wy-coupons__content .weui-navbar__item.weui-bar__item--on span {
-  color: #000;
-}
-.wy-coupons__content .weui-navbar__item.weui-bar__item--on span:before {
-  content: '';
-  position: absolute;
-  top: -8px;
-  width: 100%;
-  height: 100%;
-  border-bottom: 2px solid #1b1b1b;
-  z-index: 5;
+    background: #f9f9f9;
 }
 
+.wy-coupons__content .weui-navbar {
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+}
+
+.wy-coupons__content .weui-navbar__item {
+    padding: 0;
+    color: #aeaeae;
+    background: #fff;
+    font-size: 16px;
+}
+
+.wy-coupons__content .weui-navbar__item:after {
+    border-right: none;
+}
+
+.wy-coupons__content .weui-navbar__item span {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    color: #aeaeae;
+}
+
+.wy-coupons__content .weui-navbar__item.weui-bar__item--on {
+    color: #000;
+}
+
+.wy-coupons__content .weui-navbar__item.weui-bar__item--on span {
+    color: #000;
+}
+
+.wy-coupons__content .weui-navbar__item.weui-bar__item--on span:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #1b1b1b;
+    z-index: 5;
+}
+
+
 /* -----------------------------------------------       卡券 列表             ----------------------------------------*/
+
 .wy-coupon__list {
-  padding-right: 10px;
-  padding-left: 12px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  list-style: none;
-  margin-top: 16px;
+    padding-right: 10px;
+    padding-left: 12px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    list-style: none;
+    margin-top: 16px;
 }
+
 .wy-coupon__list .coupon__item {
-  margin-bottom: 10px;
-  position: relative;
+    margin-bottom: 10px;
+    position: relative;
 }
+
 .wy-coupon__list .coupon-a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100px;
-  background-color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100px;
+    background-color: #fff;
 }
+
 .wy-coupon__list .coupon-left {
-  width: 100px;
-  height: 100%;
+    width: 100px;
+    height: 100%;
 }
 
 .wy-coupon__list .coupon-left.coupon-green {
-  background: #f9f9f9 url(../images/8_coupon.png) no-repeat;
-  background-size: 100% 100%;
+    background: #f9f9f9 url(../images/8_coupon.png) no-repeat;
+    background-size: 100% 100%;
 }
 
 .wy-coupon__list .change-block {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 90px;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 90px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
 .wy-coupon__list .change-block .price-sign,
 .wy-coupon__list .change-block .big-price {
-  color: #fff;
-  vertical-align: middle;
+    color: #fff;
+    vertical-align: middle;
 }
+
 .wy-coupon__list .change-block .price-sign {
-  font-size: 14px;
+    font-size: 14px;
 }
+
 .wy-coupon__list .change-block .big-price {
-  font-size: 20px;
+    font-size: 20px;
 }
+
 .wy-coupon__list .change-block .price-info {
-  font-size: 12px;
-  color: #fff;
+    font-size: 12px;
+    color: #fff;
 }
+
 .wy-coupon__list .coupon-right {
     height: 100px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  box-sizing: border-box;
-  background-color: #fff;
-  border: 1px solid #eee;
-  border-left-color: transparent;
-  border-radius: 0 0 5px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-left-color: transparent;
+    border-radius: 0 0 5px 0;
 }
+
 .wy-coupon__list .coupon-right .pro-content {
     padding: 5px 0 0 0;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 100%;
-  box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
 }
+
 .wy-coupon__list .coupon-right .pro-tt {
-      display: flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
-    justify-content: center;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -1134,101 +1135,117 @@ span {
     height: 32px;
     line-height: 16px;
 }
+
 .wy-coupon__list .coupon-right .pro-hd,
 .wy-coupon__list .coupon-right .pro-ft {
-  color: #aeaeae;
-  font-size: 12px;
-  line-height: 20px;
-}
-.wy-coupon__list .coupon-right .pro-ft {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  word-break: break-all;
-  height: 16px;
-}
-.wy-coupon__list .coupon-right .pro-btn {
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
-  border-radius: 6px 0 5px 0;
-  background-color: #dd2726;
-  margin-left: 5px;
-}
-.wy-coupon__list .coupon-right .pro-btn span {
-  display: block;
-  font-size: 12px;
-  -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-          transform: scale(0.8);
-  padding: 3px;
-  box-sizing: border-box;
-  color: #fff;
-}
-.wy-coupon__list .coupon-right .pro-btn--vertical {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #dd2726;
-  border-radius: 0 5px 5px 0;
-  margin-left: 5px;
-}
-.wy-coupon__list .coupon-right .pro-btn--vertical span {
-  display: block;
-  font-size: 12px;
-  -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-          transform: scale(0.8);
-  padding: 3px;
-  box-sizing: border-box;
-  color: #fff;
-}
-.wy-coupon__list .coupon-right .pro-hasOut {
-  /* 已过期 提示 */
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 5px;
-  width: 50px;
-}
-.wy-coupon__list .coupon-right .pro-hasOut img {
-  width: 45px;
-  height: 45px;
+    color: #aeaeae;
+    font-size: 12px;
+    line-height: 20px;
 }
 
+.wy-coupon__list .coupon-right .pro-ft {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    height: 16px;
+}
+
+.wy-coupon__list .coupon-right .pro-btn {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    border-radius: 6px 0 5px 0;
+    background-color: #dd2726;
+    margin-left: 5px;
+}
+
+.wy-coupon__list .coupon-right .pro-btn span {
+    display: block;
+    font-size: 12px;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    padding: 3px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.wy-coupon__list .coupon-right .pro-btn--vertical {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #dd2726;
+    border-radius: 0 5px 5px 0;
+    margin-left: 5px;
+}
+
+.wy-coupon__list .coupon-right .pro-btn--vertical span {
+    display: block;
+    font-size: 12px;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    padding: 3px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.wy-coupon__list .coupon-right .pro-hasOut {
+    /* 已过期 提示 */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 5px;
+    width: 50px;
+}
+
+.wy-coupon__list .coupon-right .pro-hasOut img {
+    width: 45px;
+    height: 45px;
+}
+
+
 /* 优惠卡额外覆盖样式 */
+
 .wy-coupon__list--card .coupon-left {
-  width: 90px;
+    width: 90px;
 }
+
 .wy-coupon__list--card .coupon-right {
-  padding-left: 10px;
+    padding-left: 10px;
 }
+
 .wy-coupon__list--card .coupon-right .pro-btn {
     width: 1.08rem;
-  background-color: #de7426;
+    background-color: #de7426;
 }
+
 .wy-coupon__list--card .coupon-left.coupon-green {
-  background: #f9f9f9 url(../images/8_coupon.png) no-repeat;
-  background-size: 100% 100%;
+    background: #f9f9f9 url(../images/8_coupon.png) no-repeat;
+    background-size: 100% 100%;
 }
-.discount_sign{
+
+.discount_sign {
     color: #fff;
     font-size: 12px;
 }
+
+
 /*卡券结束*/
